@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import math
 
 def run():
 	n = int(input("¿Cuantos datos deseas ingresar? -> "))
@@ -17,7 +18,7 @@ def run():
 		sumresults += data[j]**2
 		data[j] = data[j]**2
 	print("La varianza es: {}".format(sumresults / len(data)))
-	
+	print("La desviación estándar es: {}".format(math.sqrt(sumresults / len(data))))
 
 if __name__ == '__main__':
 	run()
